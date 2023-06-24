@@ -23,3 +23,4 @@ Here in this exap, we are selecting each adjacent element p to h3 and styling th
 Output: [Alt text](image.png)
 
 every pseudo element is display: inline by default
+Hi
