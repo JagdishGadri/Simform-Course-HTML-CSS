@@ -24,3 +24,4 @@ Output: [Alt text](image.png)
 
 every pseudo element is display: inline by default
 Hi
+HI 2
