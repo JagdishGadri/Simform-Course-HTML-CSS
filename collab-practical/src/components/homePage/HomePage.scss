@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+
+.home-page-wrapper {
+  height: 1vh;
+  // background-color: $primary-pink;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.feature-text {
+  height: 500px;
+  padding: 18rem;
+
+  // background-color: $primary-pink;
+}
+.feature-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.section-title {
+  font-size: 8rem;
+  font-weight: 500;
+}
+.section-title-last-letter {
+  color: $primary-blue;
+}
+.feature-svg {
+  height: 500px;
+  padding: 10.7rem;
+}
+.feature-decription {
+  padding-bottom: 3rem;
+  font-size: 2rem;
+}

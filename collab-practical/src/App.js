@@ -1,12 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
-import HomePage from "./components/home-page/HomePage";
+import "./styles/global.scss";
+import HomePage from "./components/homePage/HomePage";
+import { ConfigProvider } from "antd";
+import theme from "./theme/Theme";
 
 function App() {
   return (
-    <div className="App">
-      <HomePage />
-    </div>
+    <ConfigProvider theme={theme}>
+      <div className="App">
+        <HomePage />
+      </div>
+    </ConfigProvider>
   );
 }
 

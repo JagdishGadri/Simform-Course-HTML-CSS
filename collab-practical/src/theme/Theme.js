@@ -1,7 +1,7 @@
 const theme = {
   token: {
     colorLink: "red",
-    colorPrimary: "black",
+    colorPrimary: "#5956E9",
   },
   components: {
     Radio: {

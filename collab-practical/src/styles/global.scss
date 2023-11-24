@@ -1,0 +1,18 @@
+@import "../styles/variables";
+@font-face {
+  font-family: DSSans;
+  src: url("../Assets/DMSans-VariableFont_opsz\,wght.ttf");
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: DSSans;
+}
+.link-text {
+  color: $primary-blue;
+  cursor: pointer;
+}
+.gray-text {
+  color: #999fae;
+}
