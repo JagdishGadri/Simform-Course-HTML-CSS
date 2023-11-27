@@ -24,10 +24,54 @@
   color: $primary-blue;
 }
 .feature-svg {
-  height: 500px;
+  height: 50rem;
   padding: 10.7rem;
 }
 .feature-decription {
   padding-bottom: 3rem;
   font-size: 2rem;
+}
+
+.prototype-wrapper {
+  margin: 15rem 35rem;
+  background: url("../../Assets/Group 272.svg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 124rem;
+  position: relative;
+}
+
+.prototype-text {
+  height: 50rem;
+  width: 50rem;
+  padding: 12rem;
+}
+
+.prototype-decription {
+  font-size: 1.6rem;
+  color: #292930;
+}
+
+.pink-circle-1 {
+  position: absolute;
+  top: 17.2rem;
+  left: 55rem;
+}
+
+.pink-circle-2 {
+  position: absolute;
+  top: 21.8rem;
+  left: 119rem;
+}
+
+.yellow-circle {
+  position: absolute;
+  top: 62.8rem;
+  left: 24rem;
+}
+
+.blue-circle {
+  position: absolute;
+  top: 9rem;
+  left: 100rem;
 }

@@ -6,6 +6,7 @@ function FeatureItem({ title, icon }) {
             <div >{icon}</div>
             <p className='item-title'> {title}</p>
         </div >
+
     )
 }
 
