@@ -1,32 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ReactComponent as MobileIcon } from '../../Assets/Graphic.svg'
-import { ReactComponent as FeatureIcon1 } from '../../Assets/Icon.svg'
-import { ReactComponent as FeatureIcon2 } from '../../Assets/Icon (1).svg'
-import { ReactComponent as FeatureIcon3 } from '../../Assets/Icon (2).svg'
-import { ReactComponent as PinkCircle } from '../../Assets/Ellipse 753.svg'
+import { ReactComponent as PinkCircle } from "../../Assets/Ellipse 753.svg";
 
 
 
 import './HomePage.scss'
-import { Button } from 'antd'
+import { Button, Switch } from 'antd'
 import FeatureItem from '../featureItem/FeatureItem'
 import SolidCircle from '../../Assets/SolidCircle'
+import PlanCard from '../PlanCard/PlanCard'
+import { featuresListData } from '../../utils/constants'
 const HomePage = () => {
-    const featuresListData = [{
-        icon: <FeatureIcon1 />,
-        title: 'Advanced pricing'
-    },
-    {
-        icon: <FeatureIcon2 />,
+    const [isBilledYearly, setIsBilledYearly] = useState(true)
+    console.log("isBilled", isBilledYearly)
+    const plansCardData = [{
+        isHighlighted: true,
+        userGroup: 'Individual',
+        title: 'Professional',
+        price: '$19.99',
+        featureList: ['1 User', '2 TB of secure storage', 'Premium productivity features and simple,secure file sharing'],
+        buttonColor: 'white'
+    }, {
+        isHighlighted: false,
+        userGroup: 'Small Team',
+        title: 'Standard',
+        price: '$29.99',
 
-        title: 'Relative positioning with containers'
-    },
-    {
-        icon: <FeatureIcon3 />,
+        featureList: ['3+ User', '5 TB of secure storage', 'Premium productivity features and simple,secure file sharing'],
+        buttonColor: 'pink'
 
-        title: 'Percentage-based geometry'
-    }
-    ]
+    }, {
+        isHighlighted: false,
+        userGroup: 'Large Team',
+        title: 'Ultimate',
+        price: '$99.99',
+        featureList: ['10+ User', '10 TB of secure storage', 'Premium productivity features and simple,secure file sharing'],
+        buttonColor: 'blue'
+    }]
+
+
+
     return (
         <>
             {/* <div className='home-page-wrapper'>
@@ -40,7 +53,7 @@ const HomePage = () => {
                 </div>
                 <div className='feature-svg'> <MobileIcon /></div>
             </div> */}
-
+            {/* 
             <div className='prototype-wrapper '>
                 <div className='prototype-text'>
                     <span className='section-title'>Native-like Prototying<span className='section-title-last-letter'>.</span></span>
@@ -54,8 +67,23 @@ const HomePage = () => {
                 <div className='yellow-circle'> <SolidCircle color='#FFDC60' radius={65} /></div>
 
 
-            </div>
+            </div> */}
+            <div className='plans-wrapper '>
+                <h2>Join The Revolution</h2>
+                <span className='section-title'>Find the <span className='section-title-last-letter'>Right Plan.</span></span>
+                <p className='gray-text feature-decription'>Flexible pricing options for freelancers and design teams.</p>
+                <div>
+                    <span className={`feature-decription ${isBilledYearly ? 'gray-text' : 'link-text'}`}>Billed monthly </span>
+                    <Switch defaultChecked={true} onChange={setIsBilledYearly} />
+                    <span className={` feature-decription ${isBilledYearly ? 'link-text' : 'gray-text'}`}> Billed yearly</span>
+                </div>
+                <div className='plan-cards-wrapper'>
+                    {plansCardData.map((item) => {
+                        return <PlanCard cardData={item} />
+                    })}
+                </div>
 
+            </div>
         </>
     )
 }

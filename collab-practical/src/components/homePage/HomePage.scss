@@ -2,15 +2,12 @@
 
 .home-page-wrapper {
   height: 1vh;
-  // background-color: $primary-pink;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .feature-text {
   height: 500px;
   padding: 18rem;
-
-  // background-color: $primary-pink;
 }
 .feature-title {
   font-size: 2.2rem;
@@ -74,4 +71,18 @@
   position: absolute;
   top: 9rem;
   left: 100rem;
+}
+
+.plans-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.plan-cards-wrapper {
+  margin-top: 7.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
 }

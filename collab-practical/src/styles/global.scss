@@ -3,12 +3,19 @@
   font-family: DSSans;
   src: url("../Assets/DMSans-VariableFont_opsz\,wght.ttf");
 }
+
+// Elements style overriding
 html {
   font-size: 62.5%;
 }
 body {
   font-family: DSSans;
 }
+p {
+  font-size: 1.6rem;
+}
+
+// Reusable class names
 .link-text {
   color: $primary-blue;
   cursor: pointer;
@@ -18,7 +25,17 @@ body {
 }
 
 .primary-button {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 2.2rem 3rem 5rem;
   border-radius: 2.4rem;
+}
+.list-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+}
+
+.list-item-centered {
+  align-items: center;
 }
