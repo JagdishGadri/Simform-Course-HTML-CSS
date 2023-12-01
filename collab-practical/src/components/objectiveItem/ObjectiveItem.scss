@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.objective-item-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem;
+  border: 0.1rem solid #ebebf0;
+}
+
+.objective-item-wrapper-highlighted {
+  border-top: 0.1rem solid $primary-blue;
+  .expand-text {
+    color: $primary-blue;
+  }
+}
+
+.objective-title {
+  font-size: 2.2rem;
+}
+
+.objective-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.objective-icon {
+  display: block;
+  // margin-left: 16rem;
+}

@@ -1,50 +1,23 @@
 import React, { useState } from 'react'
 import { ReactComponent as MobileIcon } from '../../Assets/Graphic.svg'
 import { ReactComponent as PinkCircle } from "../../Assets/Ellipse 753.svg";
-
-
+import LampIcon from "../../Assets/Lamp.png";
 
 import './HomePage.scss'
 import { Button, Switch } from 'antd'
 import FeatureItem from '../featureItem/FeatureItem'
 import SolidCircle from '../../Assets/SolidCircle'
 import PlanCard from '../PlanCard/PlanCard'
-import { featuresListData } from '../../utils/constants'
+import { featuresListData, objectivesListData, plansCardData } from '../../utils/constants'
+import ObjectiveItem from '../objectiveItem/ObjectiveItem';
 const HomePage = () => {
     const [isBilledYearly, setIsBilledYearly] = useState(true)
     console.log("isBilled", isBilledYearly)
-    const plansCardData = [{
-        isHighlighted: true,
-        userGroup: 'Individual',
-        title: 'Professional',
-        price: '$19.99',
-        featureList: ['1 User', '2 TB of secure storage', 'Premium productivity features and simple,secure file sharing'],
-        buttonColor: 'white'
-    }, {
-        isHighlighted: false,
-        userGroup: 'Small Team',
-        title: 'Standard',
-        price: '$29.99',
-
-        featureList: ['3+ User', '5 TB of secure storage', 'Premium productivity features and simple,secure file sharing'],
-        buttonColor: 'pink'
-
-    }, {
-        isHighlighted: false,
-        userGroup: 'Large Team',
-        title: 'Ultimate',
-        price: '$99.99',
-        featureList: ['10+ User', '10 TB of secure storage', 'Premium productivity features and simple,secure file sharing'],
-        buttonColor: 'blue'
-    }]
-
-
-
     return (
         <>
-            {/* <div className='home-page-wrapper'>
+            <div className='home-page-wrapper'>
                 <div className='feature-text'>
-                    <p className='link-text feature-title'>Auto Adaptive layouts</p>
+                    <p className='link-text bold-text'>Auto Adaptive layouts</p>
                     <span className='section-title'>Responsive DNA<span className='section-title-last-letter'>.</span></span>
                     <p className='gray-text feature-decription'>Easily creates truly responsive components  while deploying production-ready code.</p>
                     {featuresListData.map((item) => {
@@ -52,8 +25,8 @@ const HomePage = () => {
                     })}
                 </div>
                 <div className='feature-svg'> <MobileIcon /></div>
-            </div> */}
-            {/* 
+            </div>
+
             <div className='prototype-wrapper '>
                 <div className='prototype-text'>
                     <span className='section-title'>Native-like Prototying<span className='section-title-last-letter'>.</span></span>
@@ -65,11 +38,12 @@ const HomePage = () => {
                 <div className='pink-circle-2'> <SolidCircle color='#FAB8C4' radius={12} /></div>
                 <div className='blue-circle'> <SolidCircle color='#5956E9' radius={45} /></div>
                 <div className='yellow-circle'> <SolidCircle color='#FFDC60' radius={65} /></div>
+            </div>
 
 
-            </div> */}
-            <div className='plans-wrapper '>
+            <div className='plans-page-wrapper '>
                 <h2>Join The Revolution</h2>
+                <div className='pink-circle'><SolidCircle color='#fab8c4' radius='24.5' /></div>
                 <span className='section-title'>Find the <span className='section-title-last-letter'>Right Plan.</span></span>
                 <p className='gray-text feature-decription'>Flexible pricing options for freelancers and design teams.</p>
                 <div>
@@ -84,6 +58,26 @@ const HomePage = () => {
                 </div>
 
             </div>
+
+
+            <div className='objectives-page-wrapper'>
+                <div className='objectives-description-container'>
+                    <div className='objectives-description'>
+                        <span className='title-small'>Effortess</span>
+                        <span className='section-title title'>Go from ideation to design and done.</span>
+                        <p className='gray-text'>Easily create truly responsive components while deploying production-ready code.</p>
+                    </div>
+                    <div>
+                        <img src={LampIcon} alt='lamp-icon' />
+                    </div>
+                </div>
+                <div className='objective-list-wrapper'>
+                    {objectivesListData?.map((item) => {
+                        return <ObjectiveItem objectiveItem={item} key={item.id} />
+                    })}
+                </div>
+            </div>
+
         </>
     )
 }
