@@ -25,5 +25,44 @@
 
 .objective-icon {
   display: block;
+  padding-top: 2rem;
+
   // margin-left: 16rem;
+}
+
+@media (max-width: 37.5rem) {
+  .objective-item-wrapper {
+    border: none;
+    display: flex;
+    padding: 2rem;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .objective-item-wrapper-highlighted {
+    border-top: none;
+    .expand-text {
+      color: $text-dark;
+    }
+  }
+
+  .objective-title {
+    font-size: 2.2rem;
+  }
+
+  .objective-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem;
+    text-align: center;
+  }
+
+  .objective-icon {
+    display: block;
+    padding-top: 2rem;
+
+    // margin-left: 16rem;
+  }
 }

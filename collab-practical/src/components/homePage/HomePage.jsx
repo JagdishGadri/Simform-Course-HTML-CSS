@@ -18,7 +18,7 @@ const HomePage = () => {
             <div className='home-page-wrapper'>
                 <div className='feature-text'>
                     <p className='link-text bold-text'>Auto Adaptive layouts</p>
-                    <span className='section-title'>Responsive DNA<span className='section-title-last-letter'>.</span></span>
+                    <span className='section-title '>Responsive DNA<span className='section-title-last-letter'>.</span></span>
                     <p className='gray-text feature-decription'>Easily creates truly responsive components  while deploying production-ready code.</p>
                     {featuresListData.map((item) => {
                         return <FeatureItem title={item.title} icon={item.icon} />
@@ -43,7 +43,6 @@ const HomePage = () => {
 
             <div className='plans-page-wrapper '>
                 <h2>Join The Revolution</h2>
-                <div className='pink-circle'><SolidCircle color='#fab8c4' radius='24.5' /></div>
                 <span className='section-title'>Find the <span className='section-title-last-letter'>Right Plan.</span></span>
                 <p className='gray-text feature-decription'>Flexible pricing options for freelancers and design teams.</p>
                 <div>
@@ -56,7 +55,6 @@ const HomePage = () => {
                         return <PlanCard cardData={item} />
                     })}
                 </div>
-
             </div>
 
 
@@ -65,9 +63,9 @@ const HomePage = () => {
                     <div className='objectives-description'>
                         <span className='title-small'>Effortess</span>
                         <span className='section-title title'>Go from ideation to design and done.</span>
-                        <p className='gray-text'>Easily create truly responsive components while deploying production-ready code.</p>
+                        <p className='gray-text title-desc'>Easily create truly responsive components while deploying production-ready code.</p>
                     </div>
-                    <div>
+                    <div className='lamp-icon'>
                         <img src={LampIcon} alt='lamp-icon' />
                     </div>
                 </div>
