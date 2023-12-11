@@ -1,0 +1,126 @@
+.objectives-page-wrapper {
+  background: url("../../Assets/Line bg.svg");
+  background-repeat: no-repeat;
+  margin: 0 20rem;
+}
+.objectives-description-container {
+  padding: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+.objectives-description {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+}
+
+.title {
+  width: 70%;
+}
+.title-small {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #c75c6f;
+}
+
+.title-desc {
+  font-size: 2rem;
+  width: 50%;
+}
+// .lamp-icon {
+//   display: none;
+// }
+
+.objective-list-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 10rem;
+}
+
+@media (max-width: 102.4rem) {
+  //
+
+  .objectives-page-wrapper {
+    background: url("../../Assets/Line bg.svg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0 0;
+  }
+  .objectives-description-container {
+    padding: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .objectives-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-small {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c75c6f;
+  }
+
+  .objective-list-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 10rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  //
+
+  //
+
+  .objectives-description-container {
+    padding: 4rem;
+    // align-items: center;
+    text-align: center;
+  }
+  .objectives-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .objective-list-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 2rem;
+  }
+  .pink-circle-1 {
+    display: none;
+    position: absolute;
+    top: 17.2%;
+    left: 55%;
+  }
+
+  .pink-circle-2 {
+    display: none;
+    position: absolute;
+    top: 21.8%;
+    left: 119%;
+  }
+
+  .yellow-circle {
+    display: none;
+    position: absolute;
+    top: 62.8%;
+    left: 24%;
+  }
+
+  .blue-circle {
+    display: none;
+    position: absolute;
+    top: 9%;
+    left: 100%;
+  }
+}

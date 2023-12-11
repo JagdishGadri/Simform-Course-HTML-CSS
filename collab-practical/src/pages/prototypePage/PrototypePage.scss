@@ -1,0 +1,121 @@
+.prototype-wrapper {
+  margin: 6rem 35rem;
+  background: url("../../Assets/Group 272.svg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  position: relative;
+}
+
+.prototype-text {
+  display: block;
+  height: 50rem;
+  width: 50rem;
+  padding: 12rem;
+}
+
+.prototype-decription {
+  font-size: 1.8rem;
+  color: #292930;
+}
+
+.pink-circle-1 {
+  position: absolute;
+  top: 17.2%;
+  left: 55%;
+}
+
+.pink-circle-2 {
+  position: absolute;
+  top: 21.8%;
+  left: 119%;
+}
+
+.yellow-circle {
+  display: block;
+  position: absolute;
+  top: 80.8%;
+  left: 24%;
+}
+
+.blue-circle {
+  position: absolute;
+  top: 9%;
+  left: 100%;
+}
+
+@media (max-width: 102.4rem) {
+  //
+
+  .prototype-wrapper {
+    width: 102.4rem;
+    margin: 4rem;
+  }
+
+  .prototype-text {
+    display: block;
+    height: 50rem;
+    width: 25rem;
+    padding: 8rem;
+  }
+  .pink-circle-1 {
+    position: absolute;
+    top: 17.2%;
+    left: 55%;
+  }
+
+  .pink-circle-2 {
+    display: none;
+    position: absolute;
+    top: 21.8%;
+    left: 119%;
+  }
+
+  .yellow-circle {
+    display: none;
+    position: absolute;
+    top: 62.8%;
+    left: 24%;
+  }
+
+  .blue-circle {
+    position: absolute;
+    top: 9%;
+    left: 100%;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  //
+
+  .prototype-wrapper {
+    margin: 4rem;
+    width: 40.5rem;
+    background: url("../../Assets/Grey background.svg");
+    background-repeat: no-repeat;
+  }
+
+  // .section-title {
+  //   text-align: center;
+  // }
+  .prototype-text::before {
+    content: "";
+    background-image: url("../../Assets/Mask Group.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .prototype-text {
+    height: 50rem;
+    max-width: 25rem;
+    padding: 30rem 8rem 0;
+    text-align: center;
+  }
+
+  .prototype-decription {
+    color: #6d7381;
+  }
+}
