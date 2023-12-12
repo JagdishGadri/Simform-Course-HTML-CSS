@@ -7,12 +7,10 @@ import ObjectivesPage from '../../pages/objectivesPage/ObjectivesPage';
 const HomePage = () => {
     return (
         <>
-
             <FeaturesPage />
             <PrototypePage />
             <PlansPage />
             <ObjectivesPage />
-
         </>
     )
 }

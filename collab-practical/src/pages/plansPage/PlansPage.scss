@@ -18,17 +18,33 @@
   gap: 4rem;
 }
 
-@media (max-width: 80.4rem) {
+.plans-page-title {
+  text-align: center;
+}
+
+@media (max-width: 64rem) {
+  .plan-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 62rem) {
   .plan-cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
 }
-@media (max-width: 37.5rem) {
+
+@media (max-width: 24rem) {
   .plans-page-wrapper {
-    text-align: center;
     padding: 0 4rem;
+  }
+
+  .plans-page-title {
+    text-align: center;
   }
 
   .plan-cards-wrapper {
@@ -37,6 +53,7 @@
     gap: 4rem;
     margin: 5rem;
   }
+
   .lamp-icon {
     display: none;
   }

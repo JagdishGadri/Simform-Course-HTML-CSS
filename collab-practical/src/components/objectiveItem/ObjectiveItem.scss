@@ -30,7 +30,11 @@
   // margin-left: 16rem;
 }
 
-@media (max-width: 37.5rem) {
+.expand-text {
+  cursor: pointer;
+}
+
+@media (max-width: 34rem) {
   .objective-item-wrapper {
     border: none;
     display: flex;

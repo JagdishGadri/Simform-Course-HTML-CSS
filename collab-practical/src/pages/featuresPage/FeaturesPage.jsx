@@ -6,11 +6,11 @@ import FeatureItem from '../../components/featureItem/FeatureItem'
 
 const FeaturesPage = () => {
     return (
-        <div className='home-page-wrapper'>
+        <div className='feature-page-wrapper'>
             <div className='feature-text'>
                 <p className='link-text bold-text'>Auto Adaptive layouts</p>
                 <span className='section-title '>Responsive DNA<span className='section-title-last-letter'>.</span></span>
-                <p className='gray-text feature-decription'>Easily creates truly responsive components  while deploying production-ready code.</p>
+                <p className='gray-text feature-description'>Easily creates truly responsive components  while deploying production-ready code.</p>
                 {featuresListData.map((item) => {
                     return <FeatureItem title={item.title} icon={item.icon} />
                 })}

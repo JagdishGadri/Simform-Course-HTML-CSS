@@ -10,12 +10,12 @@ const PlansPage = () => {
     return (
         <div className='plans-page-wrapper '>
             <h2>Join The Revolution</h2>
-            <span className='section-title'>Find the <span className='section-title-last-letter'>Right Plan.</span></span>
-            <p className='gray-text feature-decription'>Flexible pricing options for freelancers and design teams.</p>
+            <span className='section-title plans-page-title'>Find the <span className='section-title-last-letter'>Right Plan.</span></span>
+            <p className='gray-text feature-description  '>Flexible pricing options for freelancers and design teams.</p>
             <div>
-                <span className={`feature-decription ${isBilledYearly ? 'gray-text' : 'link-text'}`}>Billed monthly </span>
+                <span className={`feature-description ${isBilledYearly ? 'gray-text' : 'link-text'}`}>Billed monthly </span>
                 <Switch defaultChecked={true} onChange={setIsBilledYearly} />
-                <span className={` feature-decription ${isBilledYearly ? 'link-text' : 'gray-text'}`}> Billed yearly</span>
+                <span className={`feature-description ${isBilledYearly ? 'link-text' : 'gray-text'}`}> Billed yearly</span>
             </div>
             <div className='plan-cards-wrapper'>
                 {plansCardData?.map((item) => {

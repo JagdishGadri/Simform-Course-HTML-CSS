@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 
-.home-page-wrapper {
+.feature-page-wrapper {
+  max-width: 100%;
   // display: grid;
   // grid-template-columns: 1fr 1fr;
   display: flex;
@@ -14,6 +15,7 @@
 .feature-text {
   // height: 500px;
   // padding: 18rem;
+  // flex: 1;
   max-width: 100%;
   color: $text-dark;
 }
@@ -22,15 +24,14 @@
   color: $primary-blue;
 }
 
-.feature-svg {
-  max-width: 100%;
+.feature-svg img {
+  width: 100%;
 }
-.feature-decription {
+.feature-description {
   font-size: 2rem;
 }
-
-@media (max-width: 102.4rem) {
-  .home-page-wrapper {
+@media (max-width: 64rem) {
+  .feature-page-wrapper {
     padding: 10rem;
   }
 
@@ -41,8 +42,8 @@
   }
 }
 
-@media (max-width: 37.5rem) {
-  .home-page-wrapper {
+@media (max-width: 24rem) {
+  .feature-page-wrapper {
     padding: 2rem 4rem;
     flex-direction: column;
   }
