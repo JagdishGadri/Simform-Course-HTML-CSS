@@ -9,25 +9,26 @@
 .prototype-text {
   display: block;
   height: 50rem;
-  width: 50rem;
+  max-width: 50rem;
   padding: 12rem;
 }
 
 .prototype-decription {
+  max-width: 100%;
   font-size: 1.8rem;
   color: #292930;
 }
 
 .pink-circle-1 {
   position: absolute;
-  top: 17.2%;
+  top: 12.2%;
   left: 55%;
 }
 
 .pink-circle-2 {
   position: absolute;
-  top: 21.8%;
-  left: 119%;
+  top: 25.8%;
+  left: 89%;
 }
 
 .yellow-circle {
@@ -40,21 +41,19 @@
 .blue-circle {
   position: absolute;
   top: 9%;
-  left: 100%;
+  left: 90%;
 }
 
 @media (max-width: 102.4rem) {
-  //
-
   .prototype-wrapper {
-    width: 102.4rem;
+    max-width: 100%;
     margin: 4rem;
   }
 
   .prototype-text {
     display: block;
     height: 50rem;
-    width: 25rem;
+    max-width: 25rem;
     padding: 8rem;
   }
   .pink-circle-1 {
@@ -73,30 +72,25 @@
   .yellow-circle {
     display: none;
     position: absolute;
-    top: 62.8%;
+    top: 5.8%;
     left: 24%;
   }
 
   .blue-circle {
     position: absolute;
     top: 9%;
-    left: 100%;
+    left: 90%;
   }
 }
 
 @media (max-width: 37.5rem) {
-  //
-
   .prototype-wrapper {
     margin: 4rem;
-    width: 40.5rem;
+    // max-width: 40.5rem;
     background: url("../../Assets/Grey background.svg");
     background-repeat: no-repeat;
   }
 
-  // .section-title {
-  //   text-align: center;
-  // }
   .prototype-text::before {
     content: "";
     background-image: url("../../Assets/Mask Group.png");
@@ -110,12 +104,13 @@
   }
   .prototype-text {
     height: 50rem;
-    max-width: 25rem;
+    // max-width: 25rem;
     padding: 30rem 8rem 0;
     text-align: center;
   }
 
   .prototype-decription {
     color: #6d7381;
+    max-width: 100%;
   }
 }

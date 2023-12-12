@@ -3,7 +3,7 @@
 .plan-card-wrapper {
   padding: 4rem;
   height: 52rem;
-  max-width: 32rem;
+  max-width: 30rem;
   border-radius: 3.2rem;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@
   .plan-card-wrapper {
     padding: 2rem;
     height: 52rem;
-    width: 27.6rem;
+    max-width: 100%;
     border-radius: 2.76rem;
     flex-direction: column;
     justify-content: space-between;
