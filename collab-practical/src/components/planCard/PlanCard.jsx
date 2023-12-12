@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button } from 'antd'
 import './PlanCard.scss'
-import { ReactComponent as ListIcon1 } from '../../Assets/Box#3.svg'
-import { ReactComponent as ListIcon2 } from '../../Assets/Box#3 (1).svg'
+import { ReactComponent as ListIcon1 } from '../../Assets/Box.svg'
+import { ReactComponent as ListIcon2 } from '../../Assets/Box(1).svg'
 
 import { ReactComponent as SmileIcon1 } from '../../Assets/Smile.svg'
 import { ReactComponent as SmileIcon2 } from '../../Assets/Smile (1).svg'
