@@ -15,7 +15,7 @@ const FeaturesPage = () => {
                     return <FeatureItem title={item.title} icon={item.icon} />
                 })}
             </div>
-            <div className='feature-svg'> <img src={MobileIcon} /></div>
+            <div className='feature-svg'> <img src={MobileIcon} alt='feature-svg' /></div>
         </div>
     )
 }
